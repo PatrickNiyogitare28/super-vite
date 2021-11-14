@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "paths": {
+        "@views/*": ["./src/views/*"],
+        "@components/*": ["./src/components/*"],
+        "@enums/*": ["./src/enums/*"],
+        "@interfaces/*": ["./src/interfaces/*"],
+        "@layouts/*": ["./src/layouts/*"],
+        "@services/*": ["./src/services/*"],
+        "@types/*": ["./src/types/*"],
+        "@helpers/*": ["./src/helpers/*"],
+        "@store/*": ["./src/store/*"],
+        "@redux-slices/*": ["./src/redux-slices/*"],
+        "@config/*": ["./src/config/*"],
+      }
+    }
+  }

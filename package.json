@@ -1,0 +1,27 @@
+{
+  "name": "super vite",
+  "author": {"name": "Patrick Niyogitare", "email": "patrickniyogitare28@gmail.com"},
+  "description": "⚡ A vite react typescript boilerplate with pre-configured sass, redux-tool-kit, tailwind & jest... built in cli coming soon ⚒️",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.6.2",
+    "@types/react-router-dom": "^5.3.2",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "5.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@vitejs/plugin-react": "^1.0.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "typescript": "^4.3.2",
+    "vite": "^2.6.4"
+  }
+}
