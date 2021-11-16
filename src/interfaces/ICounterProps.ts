@@ -1,3 +1,3 @@
 export interface ICounterProps {
-    count: number;
+    count: number
 }

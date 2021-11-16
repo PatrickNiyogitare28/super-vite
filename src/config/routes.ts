@@ -1,14 +1,13 @@
-import IRoute from "@interfaces/IRoute";
-import Counter from "../views/counter";
+import IRoute from '@interfaces/IRoute'
+import Counter from '../views/counter'
 
 const routes: IRoute[] = [
     {
-        path: "/",
+        path: '/',
         name: 'Counter Page',
         component: Counter,
-        exact: true
-        
-    }
+        exact: true,
+    },
 ]
 
-export default routes;
+export default routes

@@ -1,5 +1,5 @@
-export enum ECounterEventType{
+export enum ECounterEventType {
     DECREMENT,
     INCREMENT,
-    RESET
+    RESET,
 }

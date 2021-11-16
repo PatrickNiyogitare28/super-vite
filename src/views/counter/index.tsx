@@ -1,22 +1,39 @@
-import CounterComponent from '@components/counter';
-import AppNav from '@components/counter/app-nav';
-import { classNames } from 'classnames-generics';
-import React, {FC} from 'react';
-import styles from './styles.module.scss';
+import CounterComponent from '@components/counter'
+import AppNav from '@components/counter/app-nav'
+import { classNames } from 'classnames-generics'
+import React, { FC } from 'react'
+import styles from './styles.module.scss'
 
-const Counter= () => {
+const Counter = () => {
+    const features = [
+        ' scss, ',
+        'tailwind css, ',
+        'tslint, ',
+        'prittier, ',
+        'jest, ',
+        'redux tool kit, ',
+        'github actions, ',
+        'i18n internationalization & ',
+        'Docker',
+    ]
     return (
         <div className={classNames(styles.counterView)}>
             <AppNav />
-            <h1 className="font-bold">Welcome to Super Vite ⚡
-             <small>React Typescript vite boilerplate with pre-configured scss, tailwind, jest, redux tool-kit, tslint, github actions & Docker</small>
+            <h1 className="font-bold">
+                Welcome to Super Vite ⚡
+                <small>
+                    React Typescript vite boilerplate with pre-configured
+                    {features.map((feature, index) => (
+                        <code key={`${index}`}>{feature}</code>
+                    ))}
+                </small>
             </h1>
 
             <div>
-              <CounterComponent />
+                <CounterComponent />
             </div>
         </div>
     )
 }
 
-export default Counter;
+export default Counter
