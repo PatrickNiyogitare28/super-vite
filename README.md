@@ -1,6 +1,7 @@
 <h1 style="text-align: center">Super Vite ⚡</h1>
  A vite react typescript boilerplate with pre-configured <code>sass</code>, <code>redux-tool-kit</code>, <code>tailwind</code>, <code>esLint</code> <code>Prettier</code>, <code>i18n internationalization</code> &amp; <code>jest</code>... built in cli coming soon ⚒️
-
+<br>
+<br>
 
 ![Tests Workflows](https://github.com/patrickniyogitare28/super-vite/actions/workflows/superlinter.yml/badge.svg)
 
