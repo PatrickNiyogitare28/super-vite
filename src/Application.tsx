@@ -3,11 +3,18 @@ import {BrowserRouter, Route, Switch, RouteChildrenProps} from 'react-router-dom
 import routes from './config/routes';
 import {Provider} from 'react-redux';
 import {store} from '@store/store';
+import styles from './App.module.scss';
+import { classNamesFunc  } from 'classnames-generics';
+
+const classNames = classNamesFunc<keyof typeof styles>()
+type Props = {
+  active: boolean
+}
 
 const Application: React.FunctionComponent<{}> = () =>  {
  return (
    <Provider store={store}>
-   <div>
+   <div className={classNames(styles.appContainer)}>
      <BrowserRouter>
        <Switch>
          {routes.map((route, index) => {

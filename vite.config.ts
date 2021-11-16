@@ -1,10 +1,40 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path';
+import sassDts from "vite-plugin-sass-dts";
+
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use "@/stylesheets" as common;`,
+        importer(...args) {
+          if (args[0] !== "@/stylesheets") {
+            return;
+          }
+
+          return {
+            file: `${path.resolve(
+              __dirname,
+              "./src/assets/stylesheets"
+            )}`,
+          };
+        },
+      },
+    },
+  },
+  plugins: [
+    react(),
+    // sassDts({
+    //   allGenerate: false,
+    //   global: {
+    //     generate: false,
+    //     outFile: path.resolve(__dirname, "./style.d.ts"),
+    //   },
+    // }),
+  ],
   resolve:{
     alias: {
       '@views': path.resolve(__dirname, 'src/views'),
@@ -17,7 +47,9 @@ export default defineConfig({
       '@helpers': path.resolve(__dirname, 'src/helpers'),
       "@store": path.resolve(__dirname, 'src/store'),
       "@redux-slices": path.resolve(__dirname, 'src/redux-slices'),
-      "@config": path.resolve(__dirname, 'src/config')
+      "@config": path.resolve(__dirname, 'src/config'),
+      "@assets": path.resolve(__dirname, 'src/assets'),
+      "@common": path.resolve(__dirname, 'src/assets/stylesheets/_index.scss')
   }
   }
 })
