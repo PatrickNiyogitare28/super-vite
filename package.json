@@ -9,13 +9,18 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "prettier": "prettier  --write **/*.{ts,tsx,js}",
+    "lint:ts": "npm run prettier && eslint --fix 'src/**/*.{ts,tsx}'",
+    "lint:scss": "stylelint --fix 'src/**/*.scss'",
+    "lint:types": "tsc -p . --noEmit"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.2",
     "@types/react-router-dom": "^5.3.2",
     "classnames-generics": "^1.0.6",
     "global": "^4.4.0",
+    "prettier": "^2.4.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-redux": "^7.2.6",
@@ -30,6 +35,7 @@
     "@vitejs/plugin-react": "^1.0.0",
     "autoprefixer": "^10.4.0",
     "babel-plugin-module-resolver": "^4.1.0",
+    "eslint": "^8.2.0",
     "postcss": "^8.3.11",
     "tailwindcss": "^2.2.19",
     "typescript": "^4.3.2",

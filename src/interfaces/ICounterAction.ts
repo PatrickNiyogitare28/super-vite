@@ -1,5 +1,5 @@
-import { ECounterEventType } from "@enums/ECounterEventType";
+import { ECounterEventType } from '@enums/ECounterEventType'
 
-export interface ICounterAction{
-    actionType: ECounterEventType 
+export interface ICounterAction {
+    actionType: ECounterEventType
 }
