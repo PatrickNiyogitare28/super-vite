@@ -7,9 +7,11 @@ import {
     reset,
 } from '@redux-slices/counter.slice'
 import { ECounterEventType } from '@enums/ECounterEventType'
+import { useTranslation } from 'react-i18next'
 import styles from './styles.module.scss'
 
 const CounterComponent = () => {
+    const {t} = useTranslation();
     const dispatch: any = useAppDispatch()
     const value: number = useAppSelector(selectCount)
     const handleAction = (action: ECounterEventType) => {
@@ -49,7 +51,7 @@ const CounterComponent = () => {
                     <button
                         onClick={() => handleAction(ECounterEventType.RESET)}
                     >
-                        Reset
+                       {t('resetLabel')}
                     </button>
                 </div>
             </div>

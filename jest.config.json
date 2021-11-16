@@ -38,7 +38,8 @@
       "^@store(.*)$": "<rootDir>/src/store$1",
       "^@types(.*)$": "<rootDir>/src/types$1",
       "^@assets$": "<rootDir>/src/assets$1",
-      "^@common": "<rootDir>/src/assets/stylesheets/_index.scss"
+      "^@common": "<rootDir>/src/assets/stylesheets/_index.scss",
+      "^@locales": "<rootDir>/src/locales"
     },
     "watchPlugins": [
       "jest-watch-typeahead/filename",

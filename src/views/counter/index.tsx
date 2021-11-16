@@ -1,10 +1,13 @@
+import React, { FC } from 'react'
 import CounterComponent from '@components/counter'
 import AppNav from '@components/app-nav'
 import { classNames } from 'classnames-generics'
-import React, { FC } from 'react'
+import { useTranslation } from 'react-i18next';
 import styles from './styles.module.scss'
+import "@locales/i18n";
 
 const Counter = () => {
+    const {t} = useTranslation();
     const features = [
         ' scss, ',
         'tailwind css, ',
@@ -20,9 +23,9 @@ const Counter = () => {
         <div className={classNames(styles.counterView)}  data-testid="counter-view">
             <AppNav />
             <h1 className="font-bold">
-                Welcome to Super Vite ⚡
+               {t('welcome')}
                 <small>
-                    React Typescript vite boilerplate with pre-configured
+                    {t('label')}
                     {features.map((feature, index) => (
                         <code key={`${index}`}>{feature}</code>
                     ))}

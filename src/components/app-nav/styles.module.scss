@@ -2,6 +2,18 @@
     width: 100%;
     text-align: right;
     display: flex;
+    ul{
+        display: flex;
+        width: 5%;
+        justify-content: space-between;
+        li{
+            color: white;
+            font-weight: bold;
+        }
+        li:hover{
+            cursor: pointer;
+        }
+    }
     a{
         margin-left: auto;
         img{
