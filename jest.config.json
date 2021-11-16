@@ -1,0 +1,48 @@
+{
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest/jest.setup.js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+      "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+    ],
+    "testEnvironment": "jsdom",
+    "transform": {
+      "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.scss$": "jest-scss-transform",
+      "^.+\\.css$": "<rootDir>/jest/mocks/cssMock.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx|png|svg)$",
+      "^.+\\.module\\.(css|sass|scss)$"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.module\\.(css|sass|scss|png)$": "identity-obj-proxy",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":  "<rootDir>/jest/mocks/cssMock.js",
+      "^@components(.*)$": "<rootDir>/src/components$1",
+      "^@views(.*)$": "<rootDir>/src/views$1",
+      "^@config(.*)$": "<rootDir>/src/config$1",
+      "^@enums(.*)$": "<rootDir>/src/enums$1",
+      "^@helpers(.*)$": "<rootDir>/src/helps$1",
+      "^@interfaces(.*)$": "<rootDir>/src/interfaces$1",
+      "^@layouts(.*)$": "<rootDir>/src/layouts$1",
+      "^@redux-slices(.*)$": "<rootDir>/src/redux-slices$1",
+      "^@services(.*)$": "<rootDir>/src/services$1",
+      "^@store(.*)$": "<rootDir>/src/store$1",
+      "^@types(.*)$": "<rootDir>/src/types$1",
+      "^@assets$": "<rootDir>/src/assets$1",
+      "^@common": "<rootDir>/src/assets/stylesheets/_index.scss"
+    },
+    "watchPlugins": [
+      "jest-watch-typeahead/filename",
+      "jest-watch-typeahead/testname"
+    ],
+    "resetMocks": true
+  }

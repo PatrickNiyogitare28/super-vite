@@ -13,7 +13,8 @@
     "prettier": "prettier  --write **/*.{ts,tsx,js}",
     "lint:ts": "npm run prettier && eslint --fix 'src/**/*.{ts,tsx}'",
     "lint:scss": "stylelint --fix 'src/**/*.scss'",
-    "lint:types": "tsc -p . --noEmit"
+    "lint:types": "tsc -p . --noEmit",
+    "test": "yarn run jest -env=jsdom --coverage --watchAll=false"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.2",
@@ -29,13 +30,26 @@
     "vite-plugin-sass-dts": "^1.1.18"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@testing-library/dom": "^8.11.1",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
     "@types/node": "^16.11.7",
     "@types/react": "^17.0.35",
     "@types/react-dom": "^17.0.0",
     "@vitejs/plugin-react": "^1.0.0",
     "autoprefixer": "^10.4.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.3.1",
     "babel-plugin-module-resolver": "^4.1.0",
+    "babel-preset-react-app": "^10.0.0",
     "eslint": "^8.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.3.1",
+    "jest-circus": "^27.3.1",
+    "jest-scss-transform": "^1.0.1",
+    "jest-watch-typeahead": "^1.0.0",
     "postcss": "^8.3.11",
     "tailwindcss": "^2.2.19",
     "typescript": "^4.3.2",

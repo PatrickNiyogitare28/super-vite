@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import GithubIcon from '@assets/icons/github.png'
+import GithubIcon from '../../assets/icons/github.png';
 import styles from './styles.module.scss'
 
 const AppNav: FC = () => {

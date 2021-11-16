@@ -29,5 +29,10 @@
             padding: 15px;
             font-weight: bolder;
         }
+        button:hover{
+            background-color: #ffc629;
+            color: black;
+            transform: scale(1.01);
+        }
     }
 }
