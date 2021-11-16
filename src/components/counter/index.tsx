@@ -22,10 +22,14 @@ const CounterComponent = () => {
     }
     return (
         <div className={styles.counterContainer}>
-          <h1>Counter: {value}</h1>
-          <button onClick={() => handleAction(ECounterEventType.INCREMENT)}>+</button>
-          <button  onClick={() => handleAction(ECounterEventType.DECREMENT)}>-</button>
-          <button  onClick={() => handleAction(ECounterEventType.RESET)}>Reset</button>
+          <div className={styles.counterWrapper}>
+          <h2>Counter: <label>{value}</label></h2>
+          <div className={styles.btnsWrapper}>
+            <button onClick={() => handleAction(ECounterEventType.INCREMENT)}>+</button>
+            <button  onClick={() => handleAction(ECounterEventType.DECREMENT)}>-</button>
+            <button  onClick={() => handleAction(ECounterEventType.RESET)}>Reset</button>
+          </div>
+          </div>
         </div>
     )
 }
