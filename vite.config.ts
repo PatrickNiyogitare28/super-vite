@@ -48,10 +48,8 @@ export default defineConfig({
             '@redux-slices': path.resolve(__dirname, 'src/redux-slices'),
             '@config': path.resolve(__dirname, 'src/config'),
             '@assets': path.resolve(__dirname, 'src/assets'),
-            '@common': path.resolve(
-                __dirname,
-                'src/assets/stylesheets/_index.scss'
-            ),
+            '@common': path.resolve(__dirname,'src/assets/stylesheets/_index.scss'),
+            '@locales': path.resolve(__dirname,'src/locales')
         },
     },
 })

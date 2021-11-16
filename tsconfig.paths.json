@@ -13,7 +13,8 @@
         "@redux-slices/*": ["./src/redux-slices/*"],
         "@config/*": ["./src/config/*"],
         "@assets/*": ["./src/assets/*"],
-        "@common/*": ["./src/assets/stylesheets/_index.scss"]
+        "@common/*": ["./src/assets/stylesheets/_index.scss"],
+        "@locales/*": ["./src/locales/*"]
       }
     }
   }
