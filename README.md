@@ -5,13 +5,21 @@
 
 ![Tests Workflows](https://github.com/patrickniyogitare28/super-vite/actions/workflows/superlinter.yml/badge.svg)
 
+## Documentation
+
+Click to access [The super vite documentation](https://doc-super-vite.vercel.app/)
+
+## Live demo
+
+Click to view [The super vite live demo](https://super-vite.vercel.app/)
+
 ## Getting started
 Click `Use this template` to create the your own repo from the template
 
 Before you can start developing your awesome application you need to install the project's dependencies. Make sure you have Node (>= 10.13.0)
 
 
-### ⌨️ Development
+### Development
 
 Once all dependencies have been installed you can start development. To start a development server on [http://localhost:3000](http://localhost:3000) run:
 
@@ -23,7 +31,7 @@ or
 $ yarn dev
 ```
 
-### 🖥 Production
+### Production
 
 To run your application in production make sure to run a build first:
 
@@ -64,7 +72,7 @@ Prettier helps you to enforce consistent (opinionated) code style. If possible, 
 $ npm run prettier
 ```
 
-### 🤖 Tests
+### Tests
 
 You can write your tests using Jest and Enzyme. You can run all test with the following command
 
