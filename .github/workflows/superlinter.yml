@@ -1,4 +1,4 @@
-name: CI Tests Linter
+name: Builds Linter
 
 on:
   pull_request:
@@ -19,6 +19,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install
-      run: npm install
+      run: npm install --force
     - name: Build
       run: npm build
