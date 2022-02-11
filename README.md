@@ -3,7 +3,7 @@
 <br>
 <br>
 
-![Tests Workflows](https://github.com/patrickniyogitare28/super-vite/actions/workflows/superlinter.yml/badge.svg)
+![Builds Workflows](https://github.com/patrickniyogitare28/super-vite/actions/workflows/superlinter.yml/badge.svg)
 
 ## Documentation
 
