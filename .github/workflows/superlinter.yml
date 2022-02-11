@@ -1,4 +1,4 @@
-name: CI Tests Linter
+name: Builds Linter
 
 on:
   pull_request:
@@ -9,7 +9,7 @@ on:
 
 jobs:
   test:
-    name: Running Units Tests
+    name: Running Builds
     runs-on: ubuntu-latest
 
     steps:
@@ -19,6 +19,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install
-      run: npm install
+      run: npm install -f
     - name: Build
       run: npm build
