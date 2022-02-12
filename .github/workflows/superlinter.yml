@@ -9,7 +9,7 @@ on:
 
 jobs:
   test:
-    name: Running Units Tests
+    name: Running Builds
     runs-on: ubuntu-latest
 
     steps:
@@ -21,4 +21,4 @@ jobs:
     - name: Install
       run: npm install --force
     - name: Build
-      run: npm build
+      run: npm run build
