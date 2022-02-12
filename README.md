@@ -1,6 +1,7 @@
 <h1 style="text-align: center">Super Vite ⚡</h1>
  A vite react typescript boilerplate with pre-configured <code>sass</code>, <code>redux-tool-kit</code>, <code>tailwind</code>, <code>esLint</code> <code>Prettier</code>, <code>i18n internationalization</code> &amp; <code>Dockerfile</code>... built in cli coming soon ⚒️
  
+ 
  This to get you ready with react vite develpment with zero configurations
  
  
